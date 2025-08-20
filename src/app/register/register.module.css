@@ -1,0 +1,103 @@
+.form-co {
+    background-color: var(--color3);
+    border-radius: 16px;
+    position: relative;
+}
+
+.co-title {
+    background-color: var(--color2);
+    color: white;
+    padding: 16px 0;
+    font-size: 20px;
+    border-radius: 16px 16px 0 0;
+}
+
+.input-group {
+    border: 1px solid var(--color1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.input-group:hover {
+    transform: translateY(-3px);
+}
+
+.input-group-text {
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    color: var(--color1);
+    font-size: 1.1rem;
+}
+
+.form-control,
+.form-select {
+    border: none;
+    box-shadow: none;
+    background-color: white;
+    border-radius: 6px;
+}
+
+/* إزالة التأثيرات المسببة للمشكلة */
+.input-group .form-control {
+    margin-left: 0 !important;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+
+.input-group .input-group-text {
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.login-btn {
+    background-color: var(--color5);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #219150;
+}
+
+.res-btn {
+    background-color: transparent;
+    border: 1px solid var(--color2);
+    border-radius: 12px;
+    color: var(--color1);
+    transition: 0.3s;
+}
+
+.res-btn:hover {
+    background-color: var(--color2);
+    color: white;
+}
+
+.gradeOptions,
+.gradeOptions:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+.title {
+    color: var(--color1);
+}
+
+.form-select,
+.form-select:focus {
+    box-shadow: none;
+    border: 1px solid var(--color1);
+}
+
+.privcy {
+    position: absolute;
+}

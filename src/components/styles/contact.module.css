@@ -1,0 +1,43 @@
+.glassBox {
+    background-color: var(--color3);
+}
+
+.heading {
+    color: var(--color1);
+}
+
+.subtext {
+    color: #ccc;
+}
+
+.contactInfo {
+    color: var(--color1);
+}
+
+.form-custom {
+    background-color: transparent;
+    border: 1px solid var(--color4);
+    color: var(--color1);
+    transition: all 0.5s;
+}
+
+.form-custom::placeholder {
+    color: var(--color1);
+}
+
+.form-custom:focus {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: 2px solid var(--color2);
+    transform: translateY(-5PX);
+    color: var(--color1);
+}
+
+.text-decoration-none {
+    color: var(--color1);
+}
+
+.text-decoration-none:hover {
+    color: var(--color5);
+}

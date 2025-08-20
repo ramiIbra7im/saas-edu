@@ -1,0 +1,63 @@
+.loginPage {
+    background-color: var(--color3);
+}
+
+.loginCard {
+    border: none;
+    border-radius: 16px;
+}
+
+
+
+
+.loginButton {
+    background-color: var(--color4);
+    color: white;
+    color: var(--color3);
+    transition: all 0.5s;
+}
+
+.loginButton:hover {
+    background-color: var(--color4);
+    color: white;
+    color: var(--color3);
+    transition: 0.5s;
+    transform: translateY(3px);
+}
+
+
+
+.form-control:focus,
+.form-control {
+    box-shadow: none;
+    border: none;
+}
+
+.input-group {
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.input-group:hover {
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    transform: translateY(-3px);
+}
+
+
+.input-group-text {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.resButton {
+    background-color: var(--color3);
+    border: 1px solid var(--color4);
+    transition: 0.5s;
+}
+
+.resButton:hover {
+    background-color: var(--color4);
+    color: var(--color3);
+}

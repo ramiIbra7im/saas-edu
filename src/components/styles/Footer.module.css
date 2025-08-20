@@ -1,0 +1,35 @@
+.footer {
+    background-color: #0e1a1f;
+    color: #fff;
+}
+
+.link {
+    color: #cccccc;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff10;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+    background-color: #ffffff30;
+    transform: scale(1.1);
+}

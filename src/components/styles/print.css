@@ -1,0 +1,22 @@
+/* styles/print.css */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .print-card,
+    .print-card * {
+        visibility: visible;
+    }
+
+    .print-card {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        box-shadow: none;
+    }
+
+    .d-print-none {
+        display: none !important;
+    }
+}

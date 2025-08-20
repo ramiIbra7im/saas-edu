@@ -1,0 +1,106 @@
+.features {
+    cursor: pointer;
+    transition: 0.5s all ease;
+    background-color: var(--color3);
+}
+
+.features:hover {
+    transform: translateY(-4px);
+    color: var(--color2);
+}
+
+.icon {
+    transition: all 0.5s ease;
+
+}
+
+.features:hover .icon {
+    color: var(--color2);
+    transform: scale(1.4);
+}
+
+.main-state {
+    background-color: var(--color2);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.main-state:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.name-lable {
+    color: var(--color2);
+}
+
+.textdigital {
+    color: var(--color4);
+}
+
+.title-join {
+    background-color: var(--color3);
+    position: relative;
+    overflow: visible;
+}
+
+.btn-custom-join {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+
+/* الديكور الدائري في الزاوية */
+.title-join::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    opacity: 20%;
+    background-color: var(--color5);
+    /* غيّر اللون حسب التصميم */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.title-section {
+    color: var(--color1);
+}
+
+
+
+
+.joinSectionModern {
+    background: linear-gradient(135deg, var(--color4), var(--color1));
+    color: var(--color3);
+}
+
+.cardFeature {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.cardFeature:hover {
+    transform: translateY(-5px);
+}
+
+.btnModern {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    transition: background 0.3s ease;
+}
+
+.btnModern:hover {
+    background-color: #e0a800;
+    color: #000;
+}
+
+.textdigital {
+    color: #FFD700;
+}

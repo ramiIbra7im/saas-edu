@@ -1,0 +1,61 @@
+.cardsRow {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.cardItem {
+    border-radius: 12px;
+    background-color: var(--color3, #FDFEFE);
+    transition: transform 0.3s ease;
+
+}
+
+.cardItem:hover {
+    transform: translateY(-5px);
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    color: var(--color1, #34495E);
+    font-weight: bold;
+}
+
+.cardValue {
+    font-size: 1.4rem;
+    color: var(--color2, #F39C12);
+    font-weight: bold;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--color1, #34495E);
+}
+
+.btn-coustom {
+    background-color: var(--color4, #8E44AD);
+    color: var(--color3, #FDFEFE);
+}
+
+.btn-coustom:hover {
+    background-color: var(--color1, #34495E);
+    color: var(--color3, #FDFEFE);
+    transition: all 0.5s;
+}
+
+/* تكبير أيقونة المستخدم مع الحفاظ على القيم الافتراضية */
+.icon-user {
+    font-size: 7rem;
+    color: var(--color1, #34495E);
+}
+
+/* تنسيق كارت الطالب */
+.card-user {
+    background-color: var(--color3, #FDFEFE);
+    border-radius: 12px;
+}
+
+/* عنوان اسم الطالب */
+.title-card {
+    color: var(--color4, #8E44AD);
+    font-size: 2rem;
+}

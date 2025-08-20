@@ -1,0 +1,43 @@
+
+.clickableCard {
+    cursor: pointer;
+}
+
+
+/* الشكل العام للكرت */
+.card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    min-height: 250px;
+    border: 1px solid #eee;
+}
+
+.activeCard {
+    border: 2px solid var(--color2, #4A9782);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* سهم الدوران */
+.arrowIcon {
+    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.rotateArrow {
+    transform: rotate(180deg);
+}
+
+/* التفاصيل مع انيميشن */
+.detailsSection {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.open {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+}
