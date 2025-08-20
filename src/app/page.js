@@ -1,3 +1,4 @@
+"use client";
 import ContactSection from "@/components/ContactSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
@@ -12,7 +13,6 @@ export default function Home() {
   return (
 
     <ClientProviders>
-
       <Navbar />
       <main>
         <HeroSection />
@@ -22,7 +22,6 @@ export default function Home() {
         <SchoolHeroSection />
         <ContactSection />
         <Footer />
-
       </main>
     </ClientProviders>
 
