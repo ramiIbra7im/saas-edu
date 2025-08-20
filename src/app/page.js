@@ -6,11 +6,13 @@ import JoinSection from "@/components/JoinSection";
 import Navbar from "@/components/Navbar";
 import SchoolHeroSection from "@/components/SchoolHeroSection";
 import StatsSection from "@/components/StatsSection";
+import ClientProviders from "@/components/ClientProviders";
 
 export default function Home() {
   return (
 
-    <>
+    <ClientProviders>
+
       <Navbar />
       <main>
         <HeroSection />
@@ -22,7 +24,7 @@ export default function Home() {
         <Footer />
 
       </main>
-    </>
+    </ClientProviders>
 
   );
 }
