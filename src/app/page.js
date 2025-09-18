@@ -15,13 +15,13 @@ export default function Home() {
     <ClientProviders>
       <Navbar />
       <main>
-        <HeroSection />
+        {/* <HeroSection />
         <FeaturesSection />
         <StatsSection />
         <JoinSection />
         <SchoolHeroSection />
         <ContactSection />
-        <Footer />
+        <Footer /> */}
       </main>
     </ClientProviders>
 
