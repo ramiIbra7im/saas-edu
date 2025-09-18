@@ -1,5 +1,4 @@
 "use client"
-import BootstrapClientLoader from "@/components/BootstrapClientLoader";
 import ContactSection from "@/components/ContactSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
@@ -8,12 +7,12 @@ import JoinSection from "@/components/JoinSection";
 import Navbar from "@/components/Navbar";
 import SchoolHeroSection from "@/components/SchoolHeroSection";
 import StatsSection from "@/components/StatsSection";
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Home() {
   return (
 
     <>
-      <BootstrapClientLoader />
       <Navbar />
       <main>
         <HeroSection />
