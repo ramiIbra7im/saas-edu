@@ -34,8 +34,8 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} ${notoKufi.className}`}>
         <AuthProvider>
           {children}
-          <ToastContainer position="top-left" />
         </AuthProvider>
+        <ToastContainer position="top-left" />
       </body>
     </html>
   );
