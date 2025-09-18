@@ -42,9 +42,7 @@ export default function Navbar() {
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-        // تشغيل مرة واحدة فقط عند تحميل المكون
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [lastScrollY]);
 
     return (
         <nav
@@ -53,17 +51,8 @@ export default function Navbar() {
             dir="rtl"
         >
             <div className="container d-flex align-items-center justify-content-between">
-                <Link
-                    className="navbar-brand fw-bold d-flex align-items-center"
-                    href="/"
-                >
-                    <Image
-                        src={logo}
-                        alt="الشعار"
-                        width={40}
-                        height={40}
-                        className="ms-2"
-                    />
+                <Link className="navbar-brand fw-bold d-flex align-items-center" href="/">
+                    <Image src={logo} alt="الشعار" width={40} height={40} className="ms-2" />
                 </Link>
 
                 <button
@@ -78,55 +67,22 @@ export default function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div
-                    className="collapse navbar-collapse justify-content-center"
-                    id="mainNavbar"
-                >
+                <div className="collapse navbar-collapse justify-content-center" id="mainNavbar">
                     <ul className="navbar-nav gap-3 text-center">
                         <li className="nav-item">
-                            <Link
-                                className={`nav-link ${styles["nav-link"]} ${pathname === "/" ? styles.activeLink : ""
-                                    }`}
-                                href="/"
-                            >
-                                الرئيسية
-                            </Link>
+                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/" ? styles.activeLink : ""}`} href="/">الرئيسية</Link>
                         </li>
                         <li className="nav-item">
-                            <Link
-                                className={`nav-link ${styles["nav-link"]} ${pathname === "/#features" ? styles.activeLink : ""
-                                    }`}
-                                href="#features"
-                            >
-                                المميزات
-                            </Link>
+                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/#features" ? styles.activeLink : ""}`} href="#features">المميزات</Link>
                         </li>
                         <li className="nav-item">
-                            <Link
-                                className={`nav-link ${styles["nav-link"]} ${pathname === "/#contact" ? styles.activeLink : ""
-                                    }`}
-                                href="#contact"
-                            >
-                                اتصل بنا
-                            </Link>
+                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/#contact" ? styles.activeLink : ""}`} href="#contact">اتصل بنا</Link>
                         </li>
                         <li className="nav-item">
-                            <Link
-                                className={`nav-link ${styles["nav-link"]} ${pathname === "/register" ? styles.activeLink : ""
-                                    }`}
-                                href="/register"
-                            >
-                                تسجيل سنتر
-                            </Link>
+                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/register" ? styles.activeLink : ""}`} href="/register">تسجيل سنتر</Link>
                         </li>
                         <li className="nav-item">
-                            <Link
-                                className={`nav-link ${styles["nav-link"]} ${pathname === "/login" ? styles.activeLink : ""
-                                    }`}
-                                href="/login"
-                            >
-                                تسجيل دخول
-                            </Link>
+                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/login" ? styles.activeLink : ""}`} href="/login">تسجيل دخول</Link>
                         </li>
                     </ul>
                 </div>
