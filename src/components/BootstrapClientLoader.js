@@ -1,14 +1,12 @@
 'use client';
-
 import { useEffect } from 'react';
 
-
-const BootstrapClientLoader = () => {
+export default function BootstrapClientLoader() {
     useEffect(() => {
-        // Any additional client-side setup can go here if needed
+        import('bootstrap/dist/js/bootstrap.bundle.min');
     }, []);
 
-    return null; // This component doesn't render anything visible
-};
+    return null;
+}
 
-export default BootstrapClientLoader;
+

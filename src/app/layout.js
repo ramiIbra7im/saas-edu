@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Noto_Kufi_Arabic } from 'next/font/google';
 import { AuthProvider } from "./context/AuthContext";
 import { ToastContainer } from 'react-toastify';
+import BootstrapClientLoader from "@/components/BootstrapClientLoader";
 
 
 const notoKufi = Noto_Kufi_Arabic({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="ar" dir="rtl">
       <body className={`${geistSans.variable} ${geistMono.variable} ${notoKufi.className}`}>
         <AuthProvider>
+          <BootstrapClientLoader />
           {children}
         </AuthProvider>
         <ToastContainer position="top-left" />
