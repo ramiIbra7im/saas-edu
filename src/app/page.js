@@ -7,23 +7,25 @@ import JoinSection from "@/components/JoinSection";
 import Navbar from "@/components/Navbar";
 import SchoolHeroSection from "@/components/SchoolHeroSection";
 import StatsSection from "@/components/StatsSection";
-import ClientProviders from "@/components/ClientProviders";
+// import ClientProviders from "@/components/ClientProviders";
 
 export default function Home() {
   return (
 
-    <ClientProviders>
+    // <ClientProviders>
+    <>
       <Navbar />
       <main>
-        {/* <HeroSection />
+        <HeroSection />
         <FeaturesSection />
         <StatsSection />
         <JoinSection />
         <SchoolHeroSection />
         <ContactSection />
-        <Footer /> */}
+        <Footer />
       </main>
-    </ClientProviders>
+    </>
+    // </ClientProviders>
 
   );
 }
