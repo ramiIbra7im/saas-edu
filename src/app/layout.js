@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Noto_Kufi_Arabic } from 'next/font/google';
 import { AuthProvider } from "./context/AuthContext";
 import { ToastContainer } from 'react-toastify';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 const notoKufi = Noto_Kufi_Arabic({
