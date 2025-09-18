@@ -1,4 +1,5 @@
 "use client"
+import BootstrapClientLoader from "@/components/BootstrapClientLoader";
 import ContactSection from "@/components/ContactSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
 
     <>
+      <BootstrapClientLoader />
       <Navbar />
       <main>
         <HeroSection />
