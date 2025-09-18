@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import Image from "next/image";
 import heroImage from "../../public/hero.png";
 import styles from "./styles/hero.module.css"; // هننشئ ملف الأنيميشن هنا

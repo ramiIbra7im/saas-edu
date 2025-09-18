@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -70,19 +69,47 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse justify-content-center" id="mainNavbar">
                     <ul className="navbar-nav gap-3 text-center">
                         <li className="nav-item">
-                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/" ? styles.activeLink : ""}`} href="/">الرئيسية</Link>
+                            <Link
+                                className={`nav-link ${styles["nav-link"]} ${pathname === "/" ? styles.activeLink : ""
+                                    }`}
+                                href="/"
+                            >
+                                الرئيسية
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/#features" ? styles.activeLink : ""}`} href="#features">المميزات</Link>
+                            <Link
+                                className={`nav-link ${styles["nav-link"]}`}
+                                href="#features"
+                            >
+                                المميزات
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/#contact" ? styles.activeLink : ""}`} href="#contact">اتصل بنا</Link>
+                            <Link
+                                className={`nav-link ${styles["nav-link"]}`}
+                                href="#contact"
+                            >
+                                اتصل بنا
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/register" ? styles.activeLink : ""}`} href="/register">تسجيل سنتر</Link>
+                            <Link
+                                className={`nav-link ${styles["nav-link"]} ${pathname === "/register" ? styles.activeLink : ""
+                                    }`}
+                                href="/register"
+                            >
+                                تسجيل سنتر
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/login" ? styles.activeLink : ""}`} href="/login">تسجيل دخول</Link>
+                            <Link
+                                className={`nav-link ${styles["nav-link"]} ${pathname === "/login" ? styles.activeLink : ""
+                                    }`}
+                                href="/login"
+                            >
+                                تسجيل دخول
+                            </Link>
                         </li>
                     </ul>
                 </div>
