@@ -1,9 +1,10 @@
-
+// app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Noto_Kufi_Arabic } from 'next/font/google';
 import { AuthProvider } from "./context/AuthContext";
+import ClientProviders from "../components/ClientProviders"; // كومبوننت client-only
 
 const notoKufi = Noto_Kufi_Arabic({
   subsets: ['arabic'],
@@ -31,7 +32,9 @@ export default function RootLayout({ children }) {
     <html lang="ar" dir="rtl">
       <body className={`${geistSans.variable} ${geistMono.variable} ${notoKufi.className}`}>
         <AuthProvider>
-          {children}
+          <ClientProviders>
+            {children}
+          </ClientProviders>
         </AuthProvider>
       </body>
     </html>
