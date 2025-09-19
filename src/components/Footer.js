@@ -38,10 +38,10 @@ export default function Footer() {
                     </div>
 
                     {/* تواصل معنا */}
-                    <div className="col-md-4 text-center">
+                    <div className="col-md-4 ">
                         <h6 className="text-white  mb-3">تابعنا</h6>
-                        <div className="d-flex gap-3">
-                            <a href="https://www.facebook.com/RaMI.IbRa7iM" className={styles.icon}><FaFacebook /></a>
+                        <div className="d-flex gap-3 ">
+                            <a href="https://www.facebook.com/RaMI.IbRa7iM" className={styles.icon}><FaFacebookF /></a>
                             <a href="https://wa.me/201551212431" className={styles.icon}><FaWhatsapp /></a>
                             <a href="https://eg.linkedin.com/in/rami-ibrahim-50442b363" className={styles.icon}><FaLinkedin /></a>
                         </div>
