@@ -7,7 +7,7 @@ import styles from './styles/FeaturesSection.module.css';
 
 export default function JoinSection() {
     return (
-        <section className={`py-5  container ${styles.joinSectionModern} `}>
+        <section className={`py-5  container-fluid ${styles.joinSectionModern} `}>
             <div className="container">
                 <div className="row align-items-center">
 

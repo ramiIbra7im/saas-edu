@@ -6,14 +6,14 @@ import styles from './styles/contact.module.css';
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="container my-5">
-            <div className={`row align-items-center ${styles.glassBox} p-4 rounded shadow border`}>
+        <section id="contact" className={`${styles.cocontent} container-fluid py-5`} style={{ backgroundColor: '#f8f8f8' }}>
+            <div className={`row align-items-center m-auto container ${styles.glassBox}  rounded shadow border`}>
 
 
 
                 {/* Text & Form */}
                 <div className="text-center mb-4">
-                    <h2 className={`${styles.heading} fw-bold display-6`}>تواصل معنا</h2>
+                    <h2 className={`${styles.heading} fw-bold pt-4   display-6`}>تواصل معنا</h2>
                     <p className={styles.subtext}>نسعد بخدمتك ومساعدتك في إدارة سنترك التعليمي</p>
                 </div>
                 <div className="col-md-6">

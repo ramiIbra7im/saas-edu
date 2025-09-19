@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import logo from "../../public/globe.svg";
+import logo from "../../public/logo.svg";
 import styles from "./styles/navbar.module.css";
 
 export default function Navbar() {
@@ -25,12 +25,12 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top transition ${scrollUp ? styles.showNavbar : styles.hideNavbar}`}
+            className={`navbar navbar-expand-lg fixed-top  transition  ${scrollUp ? styles.showNavbar : styles.hideNavbar} ${styles.nav}`}
             dir="rtl"
         >
             <div className="container d-flex align-items-center justify-content-between">
                 <Link className="navbar-brand fw-bold d-flex align-items-center" href="/">
-                    <Image src={logo} alt="الشعار" width={40} height={40} className="ms-2" />
+                    <Image src={logo} alt="الشعار" width={50} height={50} className="" />
                 </Link>
 
                 <button
@@ -45,8 +45,8 @@ export default function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse justify-content-center" id="mainNavbar">
-                    <ul className="navbar-nav gap-3 text-center">
+                <div className="collapse  navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul className="navbar-nav gap-3 text-center bg-white shadow p-2 rounded-4">
                         <li className="nav-item">
                             <Link className={`nav-link ${styles["nav-link"]} ${pathname === "/" ? styles.activeLink : ""}`} href="/">الرئيسية</Link>
                         </li>
@@ -66,7 +66,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="d-none d-lg-block">
-                    <Link href="/register" className={`${styles["btn-custom"]} btn`}>ابدأ الآن</Link>
+                    <Link href="/register" className={`${styles["btn-custom"]} btn px-5`}>ابدأ الآن</Link>
                 </div>
             </div>
         </nav>

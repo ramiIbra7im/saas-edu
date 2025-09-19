@@ -1,5 +1,9 @@
+.cocontent {
+    background: linear-gradient(180deg, white 0%, #f8f8f8 100%);
+}
+
 .glassBox {
-    background-color: var(--color3);
+    background-color: #ffff;
 }
 
 .heading {
@@ -7,7 +11,7 @@
 }
 
 .subtext {
-    color: #ccc;
+    color: #464646;
 }
 
 .contactInfo {

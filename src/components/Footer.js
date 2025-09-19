@@ -1,13 +1,13 @@
 'use client';
 
 import styles from './styles/Footer.module.css';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className="container py-5">
+            <div className="container py-3">
                 <div className="row gy-4">
                     {/* شعار ووصف */}
                     <div className="col-md-4">
@@ -38,19 +38,18 @@ export default function Footer() {
                     </div>
 
                     {/* تواصل معنا */}
-                    <div className="col-md-4">
-                        <h6 className="text-white mb-3">تابعنا</h6>
+                    <div className="col-md-4 text-center">
+                        <h6 className="text-white  mb-3">تابعنا</h6>
                         <div className="d-flex gap-3">
-                            <a href="#" className={styles.icon}><FaFacebookF /></a>
-                            <a href="#" className={styles.icon}><FaTwitter /></a>
-                            <a href="#" className={styles.icon}><FaInstagram /></a>
-                            <a href="#" className={styles.icon}><FaLinkedin /></a>
+                            <a href="https://www.facebook.com/RaMI.IbRa7iM" className={styles.icon}><FaFacebook /></a>
+                            <a href="https://wa.me/201551212431" className={styles.icon}><FaWhatsapp /></a>
+                            <a href="https://eg.linkedin.com/in/rami-ibrahim-50442b363" className={styles.icon}><FaLinkedin /></a>
                         </div>
                     </div>
                 </div>
                 <hr className="my-4 border-secondary" />
                 <p className="text-center text-white small mb-0">
-                    © {new Date().getFullYear()} EduCenter | جميع الحقوق محفوظة.
+                    Ramy Ibrahim    | جميع الحقوق محفوظة ©{new Date().getFullYear()}
                 </p>
             </div>
         </footer>

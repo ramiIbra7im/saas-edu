@@ -33,12 +33,15 @@ export default function FeaturesSection() {
     ];
 
     return (
-        <section className="py-5" id="features" dir="rtl">
+        <section className={`${styles.feature} py-5`} id="features" dir="rtl">
+
             <div className="container text-center">
                 <h2 className={`${styles['title-section']} mb-5 fw-bold display-6`}>ما الذي يميز منصتنا؟</h2>
-                <div className="row g-4">
+                <div className="row g-4   position-relative">
+
+
                     {features.map((feature, idx) => (
-                        <div key={idx} className="col-md-6 col-lg-3">
+                        <div key={idx} className="col-md-6 col-lg-3 z-1">
                             <motion.div
                                 className={`${styles.features} p-4 shadow-sm border rounded h-100`}
                                 variants={cardVariants}
@@ -48,13 +51,24 @@ export default function FeaturesSection() {
                                 custom={idx}
                             >
                                 {feature.icon}
-                                <h5 className="fw-bold mb-2">{feature.title}</h5>
+                                <h5 className={`${styles.title} fw-bold mb-2`}>{feature.title}</h5>
                                 <p className="text-muted">{feature.desc}</p>
                             </motion.div>
                         </div>
+
                     ))}
+                    <motion.img
+                        src="/images/reading.png" // غيرها برابط الستيكر بتاعك
+                        alt="Sticker"
+                        className={`${styles.stickerballoon} position-absolute`}
+
+                        animate={{ y: [0, -30, 0] }} // حركة عائمة بسيطة
+                        transition={{ repeat: Infinity, duration: 2 }}
+                    />
                 </div>
+
             </div>
+
         </section>
     );
 }

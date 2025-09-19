@@ -1,3 +1,76 @@
 .heroBackground {
     background-color: var(--color3);
+    /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
+    position: relative;
+
+    /* Clip-path لعمل شكل زجزاج ناعم أسفل الـsection */
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 85%,
+            75% 100%,
+            50% 85%,
+            25% 100%,
+            0 85%);
+}
+
+
+.Image {
+    animation: anim infinite 2s 1s ease;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+}
+
+.stickerbook {
+    top: 10%;
+    left: 10%;
+    width: 80px;
+    height: 80px;
+}
+
+.stickerballoon {
+    top: -30%;
+    right: 0%;
+    width: 80px;
+    height: 80px;
+}
+
+.zigzag-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.btn {
+    background-color: var(--color5);
+    color: var(--color3);
+    transition: 0.3s all ease;
+}
+
+.btn:hover {
+    background-color: #00643a;
+    color: var(--color3);
+}
+
+.fav {
+    border: #E7494A 2px solid;
+    transition: 0.3s all ease;
+}
+
+.fav:hover {
+    background-color: #E7494A;
+    color: var(--color3);
 }

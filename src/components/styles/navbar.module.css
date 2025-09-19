@@ -1,13 +1,17 @@
 .btn-custom {
-    background-color: var(--color1);
+    background-color: var(--color5);
     color: var(--color3);
     transition: all 0.5s;
 }
 
 .btn-custom:hover {
-    background-image: linear-gradient(45deg, var(--color2) 10%, var(--color4) 90%);
+    background-color: #00643a;
     transition: all 0.5s;
     color: var(--color3);
+}
+
+.nav {
+    background-color: transparent;
 }
 
 .navbar {
@@ -16,19 +20,34 @@
 }
 
 .nav-link {
-    color: #444 !important;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
 }
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #2575fc;
+    /* لون الخط السفلي */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active {
+    width: 100%;
+}
+
 
 .nav-link:hover {
-    color: #00796b !important;
-    transform: translateY(-2px);
-}
-
-.activeLink {
-    color: #00796b !important;
-    border-bottom: 2px solid #00796b;
+    color: #2575fc;
 }
 
 .showNavbar {

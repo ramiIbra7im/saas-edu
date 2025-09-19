@@ -1,7 +1,65 @@
 .features {
     cursor: pointer;
     transition: 0.5s all ease;
-    background-color: var(--color3);
+    background-color: var(--background);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+
+
+}
+
+
+.features::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    /* حجم الدائرة */
+    height: 120px;
+    background: rgba(252, 87, 37, 0.1);
+    /* لون خفيف */
+    border-radius: 50%;
+    /* دايرة */
+    top: -50px;
+    /* مكان الدائرة داخل الكارت */
+    right: -30px;
+    z-index: 0;
+    /* خلف المحتوى */
+
+    transform: translatex(50px);
+    transition: all 0.9s ease;
+}
+
+.features::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    /* حجم الدائرة */
+    height: 120px;
+    background: rgba(252, 177, 37, 0.151);
+    /* لون خفيف */
+    border-radius: 50%;
+    /* دايرة */
+    top: -50px;
+    /* مكان الدائرة داخل الكارت */
+    left: -30px;
+    z-index: 0;
+    /* خلف المحتوى */
+
+    transform: translatex(-50px);
+    transition: all 0.5s ease;
+}
+
+/* لو حابب تأثير عند hover */
+.features:hover::before {
+    transform: translatex(10px);
+    opacity: 0.7;
+}
+
+/* لو حابب تأثير عند hover */
+.features:hover::after {
+    transform: translatex(-10px);
+    opacity: 0.7;
 }
 
 .features:hover {
@@ -35,6 +93,10 @@
 }
 
 .textdigital {
+    color: var(--color4);
+}
+
+.title {
     color: var(--color4);
 }
 
@@ -103,4 +165,34 @@
 
 .textdigital {
     color: #FFD700;
+}
+
+.stickerballoon {
+    top: -15%;
+    right: 10%;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .stickerballoon {
+        top: -10%;
+        /* أقل عمق علشان لا يخرج خارج الشاشة */
+        right: 5%;
+        /* اقرب للحافة */
+        width: 80px;
+        /* تصغير الحجم */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stickerballoon {
+        top: -6%;
+        right: 3%;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+    }
 }
