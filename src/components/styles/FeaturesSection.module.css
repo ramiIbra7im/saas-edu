@@ -1,7 +1,7 @@
 .features {
     cursor: pointer;
     transition: 0.5s all ease;
-    background-color: var(--background);
+    background-color: white;
     overflow: hidden;
     transition: transform 0.3s ease;
     position: relative;
